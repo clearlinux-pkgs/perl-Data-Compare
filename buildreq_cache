@@ -1,0 +1,4 @@
+1.25
+perl(File::Find::Rule)
+perl(Number::Compare)
+perl(Text::Glob)
