@@ -77,9 +77,9 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.0/Data/Compare.pm
-/usr/lib/perl5/vendor_perl/5.28.0/Data/Compare/Plugins.pod
-/usr/lib/perl5/vendor_perl/5.28.0/Data/Compare/Plugins/Scalar/Properties.pm
+/usr/lib/perl5/vendor_perl/5.28.1Data/Compare.pm
+/usr/lib/perl5/vendor_perl/5.28.1Data/Compare/Plugins.pod
+/usr/lib/perl5/vendor_perl/5.28.1Data/Compare/Plugins/Scalar/Properties.pm
 
 %files dev
 %defattr(-,root,root,-)
