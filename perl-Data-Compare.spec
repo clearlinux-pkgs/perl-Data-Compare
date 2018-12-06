@@ -4,7 +4,7 @@
 #
 Name     : perl-Data-Compare
 Version  : 1.25
-Release  : 8
+Release  : 9
 URL      : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Data-Compare-1.25.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Data-Compare-1.25.tar.gz
 Summary  : unknown
