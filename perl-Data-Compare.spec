@@ -4,13 +4,14 @@
 #
 Name     : perl-Data-Compare
 Version  : 1.27
-Release  : 13
+Release  : 14
 URL      : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Data-Compare-1.27.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Data-Compare-1.27.tar.gz
-Summary  : compare perl data structures
+Summary  : unknown
 Group    : Development/Tools
 License  : Artistic-1.0-Perl GPL-2.0
 Requires: perl-Data-Compare-license = %{version}-%{release}
+Requires: perl-Data-Compare-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 BuildRequires : perl(Clone)
 BuildRequires : perl(File::Find::Rule)
@@ -27,7 +28,6 @@ Summary: dev components for the perl-Data-Compare package.
 Group: Development
 Provides: perl-Data-Compare-devel = %{version}-%{release}
 Requires: perl-Data-Compare = %{version}-%{release}
-Requires: perl-Data-Compare = %{version}-%{release}
 
 %description dev
 dev components for the perl-Data-Compare package.
@@ -41,8 +41,18 @@ Group: Default
 license components for the perl-Data-Compare package.
 
 
+%package perl
+Summary: perl components for the perl-Data-Compare package.
+Group: Default
+Requires: perl-Data-Compare = %{version}-%{release}
+
+%description perl
+perl components for the perl-Data-Compare package.
+
+
 %prep
 %setup -q -n Data-Compare-1.27
+cd %{_builddir}/Data-Compare-1.27
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -81,9 +91,6 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/Data/Compare.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Data/Compare/Plugins.pod
-/usr/lib/perl5/vendor_perl/5.28.2/Data/Compare/Plugins/Scalar/Properties.pm
 
 %files dev
 %defattr(-,root,root,-)
@@ -95,3 +102,9 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %defattr(0644,root,root,0755)
 /usr/share/package-licenses/perl-Data-Compare/06877624ea5c77efe3b7e39b0f909eda6e25a4ec
 /usr/share/package-licenses/perl-Data-Compare/be0627fff2e8aef3d2a14d5d7486babc8a4873ba
+
+%files perl
+%defattr(-,root,root,-)
+/usr/lib/perl5/vendor_perl/5.30.1/Data/Compare.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Data/Compare/Plugins.pod
+/usr/lib/perl5/vendor_perl/5.30.1/Data/Compare/Plugins/Scalar/Properties.pm
