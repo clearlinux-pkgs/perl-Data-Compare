@@ -4,7 +4,7 @@
 #
 Name     : perl-Data-Compare
 Version  : 1.27
-Release  : 15
+Release  : 16
 URL      : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Data-Compare-1.27.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DC/DCANTRELL/Data-Compare-1.27.tar.gz
 Summary  : unknown
@@ -105,6 +105,6 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.2/Data/Compare.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Data/Compare/Plugins.pod
-/usr/lib/perl5/vendor_perl/5.30.2/Data/Compare/Plugins/Scalar/Properties.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Data/Compare.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Data/Compare/Plugins.pod
+/usr/lib/perl5/vendor_perl/5.30.3/Data/Compare/Plugins/Scalar/Properties.pm
