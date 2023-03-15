@@ -1,6 +1,5 @@
-1.27
+1.28
 perl(Clone)
 perl(File::Find::Rule)
 perl(Number::Compare)
 perl(Text::Glob)
-util-linux
